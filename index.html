@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explain Yourself</title>
+    <meta
+      name="description"
+      content="Explain Yourself is the party game where ridiculous questions turn into hilarious stories."
+    >
+    <link rel="preload" href="images/app-icon.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="main-card">
+        <img
+          class="app-icon"
+          src="images/app-icon.png"
+          alt="Explain Yourself app icon"
+          width="120"
+          height="120"
+          loading="eager"
+          decoding="sync"
+        >
+
+        <h1>Explain Yourself</h1>
+        <p class="description">The party game where ridiculous questions turn into hilarious stories.</p>
+        <p class="trust">No login. No account. No tracking. Just play.</p>
+
+        <div class="actions" aria-label="Download options">
+          <a
+            class="button button-primary"
+            href="https://apps.apple.com/us/app/explainyourself-game/id6757371086"
+            target="_blank"
+            rel="noreferrer"
+          >Download on the App Store</a>
+          <a
+            class="button button-secondary"
+            href="https://play.google.com/store/apps/details?id=com.petereuphosin.explainyourselfgame"
+            target="_blank"
+            rel="noreferrer"
+          >Get it on Google Play</a>
+        </div>
+
+        <p class="pricing">$0.99 on iOS • Free trial on Android</p>
+        <p class="setup-note">Quick setup. You’ll be asked for photo access to play.</p>
+        <div class="photo-trust" aria-label="Photo privacy clarification">
+          <p>Your photos stay on your device.</p>
+          <p>We do NOT upload, store, or track your photos.</p>
+          <p>Apple and Google require permission before any app can access your photos.</p>
+          <p>You are always in control.</p>
+        </div>
+
+        <div class="feature-request-actions" aria-label="Feature request options">
+          <a
+            class="button button-tertiary feature-request-button"
+            href="mailto:peter.euphosin@gmail.com"
+            id="feature-request-ios"
+          >Request iOS Feature</a>
+          <a
+            class="button button-tertiary feature-request-button"
+            href="mailto:peter.euphosin@gmail.com"
+            id="feature-request-android"
+          >Request Android Feature</a>
+        </div>
+
+        <p class="context">Perfect for parties, road trips, couples, and game nights.</p>
+      </section>
+
+      <section class="screenshots-section" aria-labelledby="how-it-works-title">
+        <div class="section-copy">
+          <p class="flow-line">Spin. Reveal. Explain. Laugh.</p>
+          <h2 id="how-it-works-title">See how it works</h2>
+          <p class="section-subtitle">A quick look at how the game plays.</p>
+        </div>
+
+        <div class="screenshots-gallery" aria-label="Gameplay screenshots">
+          <figure class="shot-card">
+            <div class="shot-frame">
+              <img
+                src="images/webshots/webshot-spin.png"
+                alt="The Explain Yourself home screen with the main spin button."
+                width="1080"
+                height="2336"
+                loading="lazy"
+              >
+            </div>
+            <figcaption>Spin to let the game pick the next photo prompt.</figcaption>
+          </figure>
+
+          <figure class="shot-card">
+            <div class="shot-frame">
+              <img
+                src="images/webshots/webshot-reveal.png"
+                alt="A gameplay round showing a photo and the prompt to explain what is happening."
+                width="1080"
+                height="2336"
+                loading="lazy"
+              >
+            </div>
+            <figcaption>Each round reveals a real photo for everyone to explain.</figcaption>
+          </figure>
+
+          <figure class="shot-card">
+            <div class="shot-frame">
+              <img
+                src="images/webshots/webshot-source-picker.png"
+                alt="The photo source picker for choosing where round images come from."
+                width="1080"
+                height="2336"
+                loading="lazy"
+              >
+            </div>
+            <figcaption>Choose which photos the game can pull into the round.</figcaption>
+          </figure>
+
+          <figure class="shot-card">
+            <div class="shot-frame">
+              <img
+                src="images/webshots/webshot-auto-spin.png"
+                alt="The Auto Spin settings screen for fast-paced group play."
+                width="1080"
+                height="2336"
+                loading="lazy"
+              >
+            </div>
+            <figcaption>Turn on Auto Spin to keep parties moving without pauses.</figcaption>
+          </figure>
+        </div>
+
+        <div class="example-round" aria-labelledby="example-round-title">
+          <h2 id="example-round-title">Example round</h2>
+          <p class="example-prompt">Prompt:<br>Explain what’s happening in this photo.</p>
+          <p class="example-outcome">Everyone explains their answer.<br>Funniest explanation wins.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-email"><a href="mailto:peter.euphosin@gmail.com">peter.euphosin@gmail.com</a></p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#press">Press</a>
+      </nav>
+      <div class="footer-legal">
+        <article id="privacy" class="footer-note">
+          <h2>Privacy</h2>
+          <p>No account, no login, no creepy tracking.</p>
+        </article>
+        <article id="terms" class="footer-note">
+          <h2>Terms</h2>
+          <p>Made for personal entertainment and respectful play.</p>
+        </article>
+        <article id="press" class="footer-note">
+          <h2>Press</h2>
+          <p>For media requests, contact peter.euphosin@gmail.com.</p>
+        </article>
+      </div>
+      <p class="copyright">&copy; Peter Euphosin</p>
+    </footer>
+    <script>
+      const featureRequestIos = document.getElementById("feature-request-ios");
+      const featureRequestAndroid = document.getElementById("feature-request-android");
+      const today = new Date().toISOString().slice(0, 10);
+      const iosSubject = `Explain Yourself Game!: iOS Feature Request - ${today}`;
+      const iosBody = "Platform: iOS\nName:\nEmail:\n\nFeature Request:\n";
+      const androidSubject = `Explain Yourself Game!: Android Feature Request - ${today}`;
+      const androidBody = "Platform: Android\nName:\nEmail:\n\nFeature Request:\n";
+
+      featureRequestIos.href =
+        `mailto:peter.euphosin@gmail.com?subject=${encodeURIComponent(iosSubject)}&body=${encodeURIComponent(iosBody)}`;
+
+      featureRequestAndroid.href =
+        `mailto:peter.euphosin@gmail.com?subject=${encodeURIComponent(androidSubject)}&body=${encodeURIComponent(androidBody)}`;
+    </script>
+  </body>
+</html>
