@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://petereuphosin-dev.github.io/explain-yourself-game-site/sitemap.xml
