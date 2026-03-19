@@ -243,6 +243,13 @@ h1 {
   display: none;
 }
 
+@media (min-width: 900px) {
+  .screenshots-gallery {
+    grid-auto-columns: minmax(12rem, 13.25rem);
+    gap: 1.1rem;
+  }
+}
+
 .shot-card {
   min-width: 0;
   margin: 0;
